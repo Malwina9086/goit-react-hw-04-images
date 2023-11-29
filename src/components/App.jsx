@@ -27,15 +27,11 @@ const App = () => {
     setPage(1);
     setIsLoading(true);
     setImages([]);
-
-    fetchGallery(newQuery, 1);
   };
 
   const onNextPage = () => {
     setIsLoading(true);
     setPage(prevPage => prevPage + 1);
-
-    fetchGallery(query, page + 1);
   };
 
   const onClickImage = url => {
